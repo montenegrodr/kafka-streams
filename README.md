@@ -1,1 +1,5 @@
 # kafka-streams
+
+Requirements
+
+- Docker

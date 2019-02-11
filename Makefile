@@ -6,6 +6,14 @@ KAFKA_PATH := .deps/$(KAFKA_DIR)
 install: .deps .deps/$(KAFKA_DIR)
 
 
+.PHONY: docker-start
+docker-start:
+	docker-compose up -d
+
+.PHONY: docker-stop
+docker-stop:
+	docker-compose down
+
 .PHONY: start
 start: build zookeeper kafka
 
